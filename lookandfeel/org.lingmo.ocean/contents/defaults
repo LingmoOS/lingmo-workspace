@@ -1,0 +1,17 @@
+[kdeglobals][KDE]
+widgetStyle=Ocean
+
+[kdeglobals][General]
+ColorScheme=Ocean
+
+[plasmarc][Theme]
+name=ocean
+
+[kwinrc][WindowSwitcher]
+LayoutName=ling_thumbnail
+
+[kwinrc][DesktopSwitcher]
+LayoutName=org.lingmo.ocean.desktop
+
+[KSplash]
+Theme=org.lingmo.ocean
