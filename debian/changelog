@@ -1,3 +1,13 @@
+lingmo-workspace (5:3.0.10+lingmo3build2) unstable; urgency=medium
+
+  * fix: 补 QScreen 完整类型
+    Q_PROPERTY(QScreen *screenToFollow ...) 只前置声明了 QScreen，Qt 6.8.2 的 moc 会报
+    "Pointer Meta Types must either point to fully-defined types or be declared with
+    Q_DECLARE_OPAQUE_POINTER(T *)"。与 velora-shell 的 dockproxy.h、album 的
+    mouseeventlistener.h 同类问题，一并修掉。
+
+ -- Lingmo OS Team <team@lingmo.org>  Thu, 15 Oct 2026 21:15:20 +0800
+
 lingmo-workspace (5:3.0.9+lingmo3build2) helium; urgency=medium
 
   * Uniform version number.
